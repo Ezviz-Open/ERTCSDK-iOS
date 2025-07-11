@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "ERTCSDK"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "A short description of ERTCSDK."
   spec.description  = <<-DESC
   TODO: Add long description of the pod here.
