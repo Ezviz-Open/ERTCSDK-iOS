@@ -20,8 +20,8 @@
 #import <ERTC/ERTCEngine+Service.h>
 #import <ERTC/ERTCLog.h>
 #import <ERTC/ERTCReplayKit.h>
-#import <ERTC/ERTCWhiteBoardDrawingParam.h>
-#import <ERTC/ERTCWhiteBoardView.h>
-#import <ERTC/ERTCWBManager.h>
+//#import <ERTC/ERTCWhiteBoardDrawingParam.h>
+//#import <ERTC/ERTCWhiteBoardView.h>
+//#import <ERTC/ERTCWBManager.h>
 #import <ERTC/ERTCEngineObjects.h>
 

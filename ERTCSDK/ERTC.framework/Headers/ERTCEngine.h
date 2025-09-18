@@ -236,6 +236,13 @@ typedef void(^InstanceBlock)(ERTCEngine * _Nullable instance,NSError * _Nullable
 ///是否允许推流，在enableLocalVideo 打开的情况下，是否允许发送，默认值为YES； 可以在加入房间前或后调用；也可以在 enableLocalVideo 前提前调用
 @property(nonatomic, assign) BOOL enableLocalVideoStreamPublishing;
 
+/// 有线耳机是否可用
+@property (nonatomic, assign, readonly) BOOL headphoneDeviceAvailable;
+/// 蓝牙耳机是否可用
+@property (nonatomic, assign, readonly) BOOL bluetoothDeviceAvailable;
+
+//是否强制使用扬声器播放
+@property (nonatomic, assign) BOOL forceToSpeaker;
 
 /// 获取SDK版本号
 + (NSString *)version;
@@ -280,7 +287,6 @@ typedef void(^InstanceBlock)(ERTCEngine * _Nullable instance,NSError * _Nullable
 /// 设置音频编码格式
 /// @param type 音频编码参数,详见ERTCVideoEncParam
 - (void)setAudioEncoderType:(ERTCAudioEncodeType)type;
-
 
 /// 是否开启小码流模块
 /// @param enable YES-开启 NO-关闭
@@ -449,6 +455,16 @@ typedef void(^InstanceBlock)(ERTCEngine * _Nullable instance,NSError * _Nullable
 
 ///设置是否打开传统降噪
 - (void)setEnableAudioCaptureANR:(BOOL)open;
+
+///初始化音频资源
+- (void)prepareLocalAudio;
+
+///设置音频模式
+- (void)setAudioCaptureModel:(ERTCAudioCaptureMode)model;
+
+///是否打开agc
+- (void)setAgcEncode:(BOOL)enable;
+
 @end
 
 NS_ASSUME_NONNULL_END

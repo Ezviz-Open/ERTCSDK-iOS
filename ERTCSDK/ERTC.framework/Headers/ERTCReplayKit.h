@@ -14,6 +14,7 @@ typedef enum : NSUInteger {
     ERTCReplayKitStateUnconnected,
     ERTCReplayKitStateConnecting,
     ERTCReplayKitStateConnected,
+    ERTCReplayKitStateDisConnected,
     ERTCReplayKitStateStopped,
 } ERTCReplayKitState;
 

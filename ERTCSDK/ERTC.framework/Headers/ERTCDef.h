@@ -346,6 +346,11 @@ typedef NS_ENUM(NSUInteger, ERTCSelfExitReason) {
     ERTCSelfExitReason_Dissolve = 2,
 };
 
+typedef NS_ENUM(NSUInteger, ERTCAudioCaptureMode) {
+    ERTCAudioCaptureMode_PlayAndRecord = 0,
+    ERTCAudioCaptureMode_CaptureOnly = 1,
+};
+
 
 
 #endif /* ERTCDef_h */

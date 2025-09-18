@@ -76,8 +76,10 @@ typedef NS_ENUM(NSUInteger, ERTCLogType) {
 
 + (instancetype)sharedInstance;
 
+
 //日志回调
 @property (nonatomic, copy) void (^logCallbackBlock)(NSString *logStr);
+
 
 /// 设置日志级别
 /// @param level level
@@ -133,7 +135,7 @@ typedef NS_ENUM(NSUInteger, ERTCLogType) {
  */
 - (void)setERTCDebugAudioLog:(BOOL)enble;
 /**
- 设置 Bav 日志
+ 开启/关闭日志
  */
 - (void)openERTCLog:(BOOL)enble withLogLevel:(ERTCLogLevel)level withLogCallback:(void(^)(NSString *logStr))logCallback;
 
